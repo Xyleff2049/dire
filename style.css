@@ -1,0 +1,134 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+#background-video {
+    left: 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: -20;
+    pointer-events: none;
+}
+
+#banner-video {
+    left: 0;
+    top: -150px;
+    width: 100%;
+    position: absolute;
+    z-index: -20;
+    pointer-events: none;
+}
+
+ul.topnav {
+    list-style-type: none;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(200, 200, 200);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+ul.topnav li.left {float: left;}
+
+ul.topnav li {float: right;}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a.active {
+    background-color: #00912b;
+    color: white;
+}
+
+ul.topnav li.left {
+    display: block;
+    padding: 6px 16px;
+}
+
+ul.topnav li.left img.logo {
+    max-height: 40px;
+}
+
+div.content {
+    margin-top: 100px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+
+#audio-control {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+form {
+    width: 75%;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+form label {
+    font-size: 20px;
+}
+
+form input {
+    width: 100%;
+}
+
+form textarea {
+    width: 100%;
+}
+
+div.fullname {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.fname {
+    float: left;
+    width: 45%;
+}
+
+div.lname {
+    float: right;
+    width: 45%;
+}
+
+.project-buttons {
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project-buttons a {
+    width: 20rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.black {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    z-index: -10;
+}
